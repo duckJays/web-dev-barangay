@@ -6,16 +6,18 @@
     <title>Web Dev Barangay - Home</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ========== NAVBAR (Bootstrap Component #1) ========== -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                🏘️ Web Dev Barangay
+                <span class="brand-icon">🏘️</span> Web Dev Barangay
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -37,111 +39,172 @@
     </nav>
 
     <!-- ========== HERO SECTION ========== -->
-    <header class="bg-light py-5 text-center">
+    <header class="hero-section text-center">
         <div class="container">
-            <h1 class="display-5 fw-bold text-primary">Welcome to Web Dev Barangay</h1>
-            <p class="lead text-muted">Your digital community hub for announcements, services, and concerns.</p>
+            <div class="hero-badge">Official Community Portal</div>
+            <h1 class="display-5 fw-bold">Welcome to Web Dev Barangay</h1>
+            <p class="lead">Your digital community hub — <em>Serbisyo para sa bawat residente.</em></p>
         </div>
     </header>
 
-    <!-- ========== ANNOUNCEMENTS SECTION ========== -->
+    <!-- ========== MAIN CONTENT ========== -->
     <main class="container my-5">
-        <h2 class="mb-4 text-primary">📢 Latest Announcements</h2>
+        <div class="row">
+            
+            <!-- ===== LEFT COLUMN: Announcements ===== -->
+            <div class="col-12 col-lg-8">
+                <div class="section-header">
+                    <h2>📢 Barangay Announcements</h2>
+                    <p class="text-muted">Stay updated with the latest news and events</p>
+                </div>
 
-        <!-- Bootstrap Grid + Cards (Bootstrap Component #2) -->
-        <div class="row g-4" id="announcementContainer">
+                <div class="row g-4" id="announcementContainer">
 
-            <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-success mb-2">New</span>
-                        <h5 class="card-title">General Assembly Meeting</h5>
-                        <p class="card-text">All residents are invited to the monthly general assembly this Saturday at 4:00 PM at the barangay hall.</p>
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card announcement-card h-100">
+                            <div class="card-body">
+                                <span class="badge badge-urgent">Urgent</span>
+                                <h5 class="card-title">General Assembly Meeting</h5>
+                                <p class="card-text">All residents are invited to the monthly general assembly this Saturday at 4:00 PM at the barangay hall. Attendance is highly encouraged.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small>📅 Posted: May 17, 2026</small>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer text-muted small">
-                        Posted: May 17, 2026
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card announcement-card health h-100">
+                            <div class="card-body">
+                                <span class="badge badge-health">Health</span>
+                                <h5 class="card-title">Free Medical Checkup</h5>
+                                <p class="card-text">Free health services this Sunday at the covered court. Blood pressure, blood sugar, and consultations available for all ages.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small>📅 Posted: May 15, 2026</small>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card announcement-card event h-100">
+                            <div class="card-body">
+                                <span class="badge badge-event">Event</span>
+                                <h5 class="card-title">Barangay Fiesta Preparation</h5>
+                                <p class="card-text">Volunteers needed for the upcoming fiesta. Sign up at the barangay hall before May 25. Let's make this year's fiesta memorable!</p>
+                            </div>
+                            <div class="card-footer">
+                                <small>📅 Posted: May 12, 2026</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card announcement-card warning h-100">
+                            <div class="card-body">
+                                <span class="badge badge-warning-custom">Notice</span>
+                                <h5 class="card-title">Water Interruption Notice</h5>
+                                <p class="card-text">Scheduled water interruption on May 20 from 8AM-5PM for pipe maintenance. Please store enough water.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small>📅 Posted: May 14, 2026</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card announcement-card program h-100">
+                            <div class="card-body">
+                                <span class="badge badge-program">Program</span>
+                                <h5 class="card-title">Feeding Program Launch</h5>
+                                <p class="card-text">Monthly feeding program for children aged 1-5 starts June 1. Registration is now open at the barangay health center.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small>📅 Posted: May 10, 2026</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card announcement-card reminder h-100">
+                            <div class="card-body">
+                                <span class="badge badge-reminder">Reminder</span>
+                                <h5 class="card-title">Monthly Clean-Up Drive</h5>
+                                <p class="card-text">Community clean-up this Saturday at 6:00 AM. Meet at the barangay hall. Bring your own walis tingting!</p>
+                            </div>
+                            <div class="card-footer">
+                                <small>📅 Posted: May 8, 2026</small>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark mb-2">Health</span>
-                        <h5 class="card-title">Free Medical Checkup</h5>
-                        <p class="card-text">Free health services this Sunday at the covered court. Blood pressure, blood sugar, and consultations available.</p>
+            <!-- ===== RIGHT COLUMN: Community Ads Sidebar ===== -->
+            <aside class="col-12 col-lg-4 mt-5 mt-lg-0">
+                <div class="ads-board">
+                    <div class="ads-board-header">
+                        <h3>📌 Community Bulletin</h3>
+                        <p>Local ads & notices from residents</p>
                     </div>
-                    <div class="card-footer text-muted small">
-                        Posted: May 15, 2026
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-info mb-2">Event</span>
-                        <h5 class="card-title">Barangay Fiesta Preparation</h5>
-                        <p class="card-text">Volunteers needed for the upcoming fiesta. Sign up at the barangay hall before May 25.</p>
+                    <!-- Ad 1 -->
+                    <div class="ad-item">
+                        <span class="ad-tag ad-tag-services">Services</span>
+                        <h5>Computer Repair & Upgrade</h5>
+                        <p>Affordable PC/laptop repair. Home service available. Call Kuya Ben.</p>
+                        <small>📞 0912-111-2222</small>
                     </div>
-                    <div class="card-footer text-muted small">
-                        Posted: May 12, 2026
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 4 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-danger mb-2">Urgent</span>
-                        <h5 class="card-title">Water Interruption Notice</h5>
-                        <p class="card-text">Scheduled water interruption on May 20 from 8AM-5PM for pipe maintenance. Please store water.</p>
+                    <!-- Ad 2 -->
+                    <div class="ad-item">
+                        <span class="ad-tag ad-tag-sale">For Sale</span>
+                        <h5>Second-Hand Bicycle</h5>
+                        <p>Mountain bike, good condition. Perfect for service papasok sa work.</p>
+                        <small>💰 PHP 3,500 | 📞 0918-333-4444</small>
                     </div>
-                    <div class="card-footer text-muted small">
-                        Posted: May 14, 2026
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-success mb-2">Program</span>
-                        <h5 class="card-title">Feeding Program Launch</h5>
-                        <p class="card-text">Monthly feeding program for children aged 1-5 starts June 1. Registration is now open.</p>
+                    <!-- Ad 3 -->
+                    <div class="ad-item">
+                        <span class="ad-tag ad-tag-jobs">Job Hiring</span>
+                        <h5>Tricycle Driver Wanted</h5>
+                        <p>Looking for boundary driver. Must have valid license. Ask for Mang Romy.</p>
+                        <small>📍 Purok 3 | 📞 0920-555-6666</small>
                     </div>
-                    <div class="card-footer text-muted small">
-                        Posted: May 10, 2026
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 6 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-secondary mb-2">Reminder</span>
-                        <h5 class="card-title">Clean-Up Drive</h5>
-                        <p class="card-text">Monthly community clean-up this Saturday at 6:00 AM. Meet at the barangay hall. Bring your own broom.</p>
+                    <!-- Ad 4 -->
+                    <div class="ad-item">
+                        <span class="ad-tag ad-tag-services">Services</span>
+                        <h5>Manicure & Pedicure</h5>
+                        <p>Home service beauty care. Message Ate Nene for appointments.</p>
+                        <small>📞 0935-777-8888</small>
                     </div>
-                    <div class="card-footer text-muted small">
-                        Posted: May 8, 2026
+
+                    <!-- Ad 5 -->
+                    <div class="ad-item">
+                        <span class="ad-tag ad-tag-lost">Lost & Found</span>
+                        <h5>Lost: Brown Wallet</h5>
+                        <p>Lost near the covered court last Sunday. IDs inside. Reward offered.</p>
+                        <small>📞 0905-999-0000</small>
                     </div>
+
                 </div>
-            </div>
+            </aside>
 
         </div>
     </main>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="bg-primary text-white text-center py-3 mt-5">
+    <footer class="text-white text-center py-3 mt-5">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Web Dev Barangay. Built for NTC_PC9 Final Project.</p>
+            <p class="mb-0">&copy; 2026 Web Dev Barangay. Built for NTC_PC9 Final Project. <br class="d-md-none"><span class="footer-tagline">Serbisyo para sa komunidad.</span></p>
         </div>
     </footer>
 
