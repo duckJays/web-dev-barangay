@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Barangay - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR (Bootstrap Component #1) ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                🏘️ Web Dev Barangay
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificate.html">Request Certificate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report.html">Report an Issue</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-primary">Welcome to Web Dev Barangay</h1>
+            <p class="lead text-muted">Your digital community hub for announcements, services, and concerns.</p>
+        </div>
+    </header>
+
+    <!-- ========== ANNOUNCEMENTS SECTION ========== -->
+    <main class="container my-5">
+        <h2 class="mb-4 text-primary">📢 Latest Announcements</h2>
+
+        <!-- Bootstrap Grid + Cards (Bootstrap Component #2) -->
+        <div class="row g-4" id="announcementContainer">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">New</span>
+                        <h5 class="card-title">General Assembly Meeting</h5>
+                        <p class="card-text">All residents are invited to the monthly general assembly this Saturday at 4:00 PM at the barangay hall.</p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        Posted: May 17, 2026
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Health</span>
+                        <h5 class="card-title">Free Medical Checkup</h5>
+                        <p class="card-text">Free health services this Sunday at the covered court. Blood pressure, blood sugar, and consultations available.</p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        Posted: May 15, 2026
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Event</span>
+                        <h5 class="card-title">Barangay Fiesta Preparation</h5>
+                        <p class="card-text">Volunteers needed for the upcoming fiesta. Sign up at the barangay hall before May 25.</p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        Posted: May 12, 2026
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Urgent</span>
+                        <h5 class="card-title">Water Interruption Notice</h5>
+                        <p class="card-text">Scheduled water interruption on May 20 from 8AM-5PM for pipe maintenance. Please store water.</p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        Posted: May 14, 2026
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Program</span>
+                        <h5 class="card-title">Feeding Program Launch</h5>
+                        <p class="card-text">Monthly feeding program for children aged 1-5 starts June 1. Registration is now open.</p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        Posted: May 10, 2026
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Reminder</span>
+                        <h5 class="card-title">Clean-Up Drive</h5>
+                        <p class="card-text">Monthly community clean-up this Saturday at 6:00 AM. Meet at the barangay hall. Bring your own broom.</p>
+                    </div>
+                    <div class="card-footer text-muted small">
+                        Posted: May 8, 2026
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Web Dev Barangay. Built for NTC_PC9 Final Project.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
