@@ -22,7 +22,6 @@ if (certificateForm) {
     const purposeError = document.getElementById('purposeError');
 
     // ========== THE KEY JAVASCRIPT FUNCTION ==========
-    // This is the function you'll explain in your video.
     // It validates the form in real-time using DOM manipulation.
     function validateCertificateForm(event) {
         // Prevent the form from submitting and refreshing the page
